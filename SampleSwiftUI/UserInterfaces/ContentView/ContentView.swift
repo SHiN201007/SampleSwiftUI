@@ -19,6 +19,7 @@ struct ContentView_Previews: PreviewProvider {
             ["iPhone SE (2nd generation)", "iPhone XS Max"],
             id: \.self) { device in
             ContentView()
+                .environmentObject(ModelData())
                 .previewDevice(PreviewDevice(rawValue: device))
                 .previewDisplayName(device)
         }
