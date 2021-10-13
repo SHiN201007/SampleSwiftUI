@@ -15,6 +15,9 @@
 		0627C5A6270D6D00002A28B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0627C5A4270D6D00002A28B7 /* LaunchScreen.storyboard */; };
 		0627C5B1270D6D00002A28B7 /* SampleSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627C5B0270D6D00002A28B7 /* SampleSwiftUITests.swift */; };
 		0627C5BC270D6D00002A28B7 /* SampleSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0627C5BB270D6D00002A28B7 /* SampleSwiftUIUITests.swift */; };
+		064ED6402716670B00F516C8 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064ED63F2716670B00F516C8 /* CircleImage.swift */; };
+		064ED6422716694800F516C8 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064ED6412716694800F516C8 /* MapView.swift */; };
+		064ED64527166DD400F516C8 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 064ED64427166DD400F516C8 /* landmarkData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		0627C5B7270D6D00002A28B7 /* SampleSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0627C5BB270D6D00002A28B7 /* SampleSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSwiftUIUITests.swift; sourceTree = "<group>"; };
 		0627C5BD270D6D00002A28B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064ED63F2716670B00F516C8 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		064ED6412716694800F516C8 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		064ED64427166DD400F516C8 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +107,8 @@
 			children = (
 				0627C599270D6CFF002A28B7 /* AppDelegate.swift */,
 				0627C59B270D6CFF002A28B7 /* SceneDelegate.swift */,
+				064ED64627166DE100F516C8 /* Resource */,
 				0627C5C9270D7025002A28B7 /* UserInterfaces */,
-				0627C5CA270D7042002A28B7 /* Views */,
-				0627C59F270D6D00002A28B7 /* Assets.xcassets */,
 				0627C5A4270D6D00002A28B7 /* LaunchScreen.storyboard */,
 				0627C5A7270D6D00002A28B7 /* Info.plist */,
 				0627C5A1270D6D00002A28B7 /* Preview Content */,
@@ -140,16 +145,28 @@
 		0627C5C9270D7025002A28B7 /* UserInterfaces */ = {
 			isa = PBXGroup;
 			children = (
-				0627C59D270D6CFF002A28B7 /* ContentView.swift */,
+				064ED64327166D5D00F516C8 /* ContentView */,
 			);
 			path = UserInterfaces;
 			sourceTree = "<group>";
 		};
-		0627C5CA270D7042002A28B7 /* Views */ = {
+		064ED64327166D5D00F516C8 /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
+				0627C59D270D6CFF002A28B7 /* ContentView.swift */,
+				064ED63F2716670B00F516C8 /* CircleImage.swift */,
+				064ED6412716694800F516C8 /* MapView.swift */,
 			);
-			path = Views;
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		064ED64627166DE100F516C8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				064ED64427166DD400F516C8 /* landmarkData.json */,
+				0627C59F270D6D00002A28B7 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0627C5A6270D6D00002A28B7 /* LaunchScreen.storyboard in Resources */,
+				064ED64527166DD400F516C8 /* landmarkData.json in Resources */,
 				0627C5A3270D6D00002A28B7 /* Preview Assets.xcassets in Resources */,
 				0627C5A0270D6D00002A28B7 /* Assets.xcassets in Resources */,
 			);
@@ -283,6 +301,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0627C59A270D6CFF002A28B7 /* AppDelegate.swift in Sources */,
+				064ED6402716670B00F516C8 /* CircleImage.swift in Sources */,
+				064ED6422716694800F516C8 /* MapView.swift in Sources */,
 				0627C59C270D6CFF002A28B7 /* SceneDelegate.swift in Sources */,
 				0627C59E270D6CFF002A28B7 /* ContentView.swift in Sources */,
 			);

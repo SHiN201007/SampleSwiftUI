@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "checkbox_off.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "checkbox_off@2x.png",
+      "filename" : "twinlake@2x.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "checkbox_off@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
