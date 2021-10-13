@@ -16,6 +16,10 @@ struct ContentView: View {
         case list
     }
     
+    init() {
+        UITabBar.appearance().unselectedItemTintColor = UIColor.lightGray
+    }
+    
     var body: some View {
         TabView(selection: $selection) {
             CategoryHome()
@@ -30,6 +34,7 @@ struct ContentView: View {
                 }
                 .tag(Tab.list)
         }
+        .accentColor(.green)
     }
 }
 
